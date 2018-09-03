@@ -1,5 +1,7 @@
 * 参考：https://ant.design/docs/react/use-in-typescript-cn
 
+* 使用了 react-app-rewired、ts-import-plugin
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

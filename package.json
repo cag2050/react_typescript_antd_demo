@@ -5,14 +5,15 @@
   "dependencies": {
     "antd": "^3.9.0",
     "react": "^16.4.2",
+    "react-app-rewired": "^1.6.2",
     "react-dom": "^16.4.2",
-    "react-scripts-ts": "2.17.0"
+    "react-scripts-ts": "2.17.0",
+    "ts-import-plugin": "^1.5.4"
   },
   "scripts": {
-    "start": "react-scripts-ts start",
-    "build": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "start": "react-app-rewired start --scripts-version react-scripts-ts",
+    "build": "react-app-rewired build --scripts-version react-scripts-ts",
+    "test": "react-app-rewired test --env=jsdom --scripts-version react-scripts-ts"
   },
   "devDependencies": {
     "@types/jest": "^23.3.1",
