@@ -1,5 +1,5 @@
 const tsImportPluginFactory = require('ts-import-plugin')
-const { getLoader } = require("react-app-rewired");
+const {getLoader} = require("react-app-rewired");
 
 module.exports = function override(config, env) {
     const tsLoader = getLoader(
@@ -12,11 +12,11 @@ module.exports = function override(config, env) {
 
     tsLoader.options = {
         getCustomTransformers: () => ({
-            before: [ tsImportPluginFactory({
+            before: [tsImportPluginFactory({
                 libraryDirectory: 'es',
                 libraryName: 'antd',
                 style: 'css',
-            }) ]
+            })]
         })
     };
 
